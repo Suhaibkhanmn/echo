@@ -244,11 +244,3 @@ Echo keeps Gemini usage compact:
 - fall back to templates when Gemini is unavailable
 
 If Gemini is unavailable, Echo still works with local scoring and fallback prompts.
-
-## Product Principle
-
-Echo should stay focused.
-
-The point is not to become a giant productivity system or a generic AI chat app. The loop is simple: capture what crossed your mind, then come back later and close what still matters.
-
-Capture first. Close later. Keep the loop alive.
