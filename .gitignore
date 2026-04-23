@@ -1,0 +1,62 @@
+# Dependencies
+node_modules/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Logs and temporary files
+*.log
+_stdout.log
+tmp-*
+*.tmp
+*.temp
+
+# Editor / local workspace
+.vscode/
+.idea/
+.cursor/
+
+# Expo / React Native
+.expo/
+.expo-shared/
+apps/android/.expo/
+apps/android/.expo-shared/
+
+# Android native/build output
+apps/android/android/
+apps/android/ios/
+apps/android/.gradle/
+*.apk
+*.aab
+
+# Tauri / Rust build output
+apps/desktop/src-tauri/target/
+apps/desktop/src-tauri/Cargo.lock
+
+# JavaScript build output
+dist/
+build/
+coverage/
+.turbo/
+.cache/
+
+# Local release artifacts
+release/
+
+# Local databases
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,20 @@
+{
+  "name": "accountability",
+  "private": true,
+  "scripts": {
+    "dev:desktop": "pnpm --filter @accountability/desktop dev",
+    "build:desktop": "pnpm --filter @accountability/desktop build",
+    "dev:android": "pnpm --filter @accountability/android start",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "pnpm": {
+    "overrides": {
+      "react": "19.1.0",
+      "react-dom": "19.1.0"
+    }
+  }
+}

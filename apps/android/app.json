@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "echo",
+    "slug": "accountability",
+    "scheme": "accountability",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0E1511"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.accountability.app"
+    },
+    "android": {
+      "package": "com.accountability.app",
+      "softwareKeyboardLayoutMode": "resize",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0E1511"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "RECORD_AUDIO",
+        "POST_NOTIFICATIONS",
+        "VIBRATE",
+        "WAKE_LOCK",
+        "RECEIVE_BOOT_COMPLETED"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-sqlite",
+      [
+        "expo-notifications",
+        {
+          "color": "#2a2a2a"
+        }
+      ],
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "echo uses the microphone for voice capture of your thoughts.",
+          "speechRecognitionPermission": "echo transcribes your speech on-device to save it as an entry."
+        }
+      ]
+    ]
+  }
+}
